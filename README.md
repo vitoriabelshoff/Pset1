@@ -17,4 +17,25 @@ Se você passar essa imagem pelo filtro de inversão, qual seria o
 output esperado? Justifique sua resposta.</br>
 ### Resposta: 
 
+## Questão 2
+> 
+### Resposta: 
+
+## Questão 3
+> 
+### Resposta: 
+
+## Questão 4
+> 
+### Resposta: 
+
+## Questão 5
+> 
+### Resposta: 
+
+## Questão 6
+> 
+### Resposta: 
+
+
 
