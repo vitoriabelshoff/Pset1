@@ -60,21 +60,21 @@ kernel de desfoque de caixa de 3 × 3, que kernel k poderíamos usar para calcul
 toda a imagem nítida com uma única correlação? Justifique sua resposta mostrando
 os cálculos.
 ### Resposta: 
-Seria possível usando a correlação de S x,y = round( 2 * Ix,y - Bx,y ).
+Seria possível usando a correlação de S x,y = round( 2 * Ix,y - Bx,y ). </br>
 Para chegar na resposta é preciso usar na fórmula o dobro da imagem pra aplicar a nitidez, dessa forma:
-2 * Ix,y :
-[ 0 0 0
-0 2 0
-0 0 0 ]
-Mas como ja temos os valores de kernel 3 x 3, que seria:
-[ 1/9, 1/9, 1/9
-1/9, 1/9, 1/9
-1/9, 1/9, 1/9 ]
-É só fazer a subtração de 2Ix,y com Bx,y, então chegamos no resultado:
-[ -1/9, -1/9, -1/9
--1/9, -17/9, -1/9
--1/9, -1/9, -1/9 ].
-Teste das imagens:
+2 * Ix,y : </br>
+[ 0 0 0 </br>
+0 2 0 </br>
+0 0 0 ] </br>
+Mas como ja temos os valores de kernel 3 x 3, que seria: </br>
+[ 1/9, 1/9, 1/9 </br>
+1/9, 1/9, 1/9 </br>
+1/9, 1/9, 1/9 ] </br>
+É só fazer a subtração de 2Ix,y com Bx,y, então chegamos no resultado: </br>
+[ -1/9, -1/9, -1/9 </br>
+-1/9, -17/9, -1/9 </br>
+-1/9, -1/9, -1/9 ]. </br>
+Teste das imagens: </br>
 ![image](https://github.com/vitoriabelshoff/Pset1/assets/103432976/927d7284-67f5-4771-a1b2-48106c9d24b0)
 ![image](https://github.com/vitoriabelshoff/Pset1/assets/103432976/8b60200f-1ec0-44cd-83f0-98432520dab1)
 
@@ -83,6 +83,12 @@ Teste das imagens:
 Tente executar mostrar nos resultados dessas correlações intermediárias para ter
 uma noção do que está acontecendo aqui.
 ### Resposta: 
+Os kernels mostrados no pdf são responsaveis por derivar a imagem com as bordas destacadas, porem um fazendo pelo eixo x e outro fazenso pelo eixo y.]
+Kernel do eixo X:
+![image](https://github.com/vitoriabelshoff/Pset1/assets/103432976/319ddbad-0cf8-4bac-9948-4de45f17eed1)
+Kernel do eixo Y:
+![image](https://github.com/vitoriabelshoff/Pset1/assets/103432976/57260872-592e-4157-8ed6-6a12ac5eca8d)
+
 
 
 
