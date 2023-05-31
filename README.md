@@ -60,6 +60,23 @@ kernel de desfoque de caixa de 3 × 3, que kernel k poderíamos usar para calcul
 toda a imagem nítida com uma única correlação? Justifique sua resposta mostrando
 os cálculos.
 ### Resposta: 
+Seria possível usando a correlação de S x,y = round( 2 * Ix,y - Bx,y ).
+Para chegar na resposta é preciso usar na fórmula o dobro da imagem pra aplicar a nitidez, dessa forma:
+2 * Ix,y :
+[ 0 0 0
+0 2 0
+0 0 0 ]
+Mas como ja temos os valores de kernel 3 x 3, que seria:
+[ 1/9, 1/9, 1/9
+1/9, 1/9, 1/9
+1/9, 1/9, 1/9 ]
+É só fazer a subtração de 2Ix,y com Bx,y, então chegamos no resultado:
+[ -1/9, -1/9, -1/9
+-1/9, -17/9, -1/9
+-1/9, -1/9, -1/9 ].
+Teste das imagens:
+![image](https://github.com/vitoriabelshoff/Pset1/assets/103432976/927d7284-67f5-4771-a1b2-48106c9d24b0)
+![image](https://github.com/vitoriabelshoff/Pset1/assets/103432976/8b60200f-1ec0-44cd-83f0-98432520dab1)
 
 ## Questão 6
 > explique o que cada um dos kernels acima, por si só, está fazendo.
