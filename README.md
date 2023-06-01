@@ -16,6 +16,13 @@ Professor: Abrantes Araújo Silva Filho </br>
 Se você passar essa imagem pelo filtro de inversão, qual seria o
 output esperado? Justifique sua resposta.</br>
 ### Resposta: 
+Para o output esperado, temos ja como conhecimento prévio que os pixels podem ser representados dos numeros de 0 a 255, por cores, e quando invertemos o branco(255) por exemplo, teremos o preto(0). Então: </br>
+
+255, que é o valor máximo, menos 0, que é o preto, resulta no branco. </br>
+
+Logo podemos deduzir que a inversão faria: [(255 - 29),(255 - 89),(255 - 136), (255 - 200)], dando o resultando: </br>
+
+Pixels: [226, 166, 119, 55].
 
 ## Questão 2
 > faça a depuração e, quando terminar, seu código deve conseguir
@@ -87,8 +94,8 @@ Os kernels mostrados no pdf são responsaveis por derivar a imagem com as bordas
 Kernel do eixo X: </br>
 ![image](https://github.com/vitoriabelshoff/Pset1/assets/103432976/319ddbad-0cf8-4bac-9948-4de45f17eed1) </br>
 Kernel do eixo Y: </br>
-![image](https://github.com/vitoriabelshoff/Pset1/assets/103432976/57260872-592e-4157-8ed6-6a12ac5eca8d)
-
+![image](https://github.com/vitoriabelshoff/Pset1/assets/103432976/57260872-592e-4157-8ed6-6a12ac5eca8d) </br>
+Aplicação completa de Kernel: </br>
 ![image](https://github.com/vitoriabelshoff/Pset1/assets/103432976/e72f1ce3-a934-4f93-8662-f40993c5ac01)
 
 
